@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap');
+
+$font-mulish: 'Mulish', sans-serif;
+
 * {
     padding: 0;
     margin: 0;
@@ -6,3 +10,69 @@
     text-decoration: none;
     list-style: none;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-mulish;
+    background-color:#FFBB33;
+}
+
+.feedback-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 610px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, .2);
+    &-img{
+        height: 138px;
+        width: 138px;
+        margin-bottom: 20px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 15px;
+        color: rgba(36, 46, 76, 1);
+    }
+    &-desc{
+        max-width: 425px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: rgba(36, 46, 76, 1);
+    }
+    & .back-to-login{
+        height: 55px;
+        width: 234px;
+        border: none;
+        border-radius: 28px;
+        background: linear-gradient(to right, rgba(214, 147, 234, 1),
+        rgba(244, 131, 149, 1),
+        rgba(255, 165, 119, 1));
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $font-mulish;
+        cursor: pointer;
+    }
+    & svg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
